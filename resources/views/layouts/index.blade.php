@@ -5,6 +5,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title')</title>
+        <link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{url('assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{url('assets/awesome/css/font-awesome.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+        <script src="{{url('assets/js/jquery-3.1.0.js')}}"></script>
+        <script src="{{url('assets/bootstrap/js/bootstrap.js')}}"></script>
+        <script src="{{url('assets/js/main.js')}}"></script>
+        <script src="{{url('assets/js/slider.js')}}"></script>
+        <script src="{{url('assets/js/main.js')}}"></script>
+    </head>
+    <body>
         <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ url('assets/awesome/css/font-awesome.css') }}">
@@ -137,5 +149,6 @@
             </section><!-- aysel -->
             
         </body>
+    </html>
     </html>
     <script src="assets/js/main.js"></script>
