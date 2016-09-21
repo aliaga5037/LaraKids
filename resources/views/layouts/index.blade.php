@@ -5,6 +5,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title')</title>
+<<<<<<< HEAD
         <link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{url('assets/css/style.css')}}">
         <link rel="stylesheet" href="{{url('assets/awesome/css/font-awesome.css')}}">
@@ -17,6 +18,19 @@
         <script src="{{url('assets/js/main.js')}}"></script>
     </head>
     <body>
+=======
+        <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+        <link rel="stylesheet" href="{{ url('assets/awesome/css/font-awesome.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="{{ url('assets/js/jquery-3.1.0.js')}}"></script>
+        <script src="{{ url('assets/bootstrap/js/bootstrap.js')}}"></script>
+        <script src="{{ url('assets/js/main.js')}}"></script>
+        <script src="{{ url('assets/js/slider.js')}}"></script>
+>>>>>>> upstream/master
         <section id='header'><!-- aysel -->
         <!-- <div class = 'container-fluid'> -->
         <div class = 'container'>
@@ -72,6 +86,11 @@
         </div>
     </section>
     @yield('content')
+<<<<<<< HEAD
+=======
+    
+    <img src="assets/images/top.png" title="Go To Top" class="top">
+>>>>>>> upstream/master
     <section id="about">
         <div class = 'container-fluid'>
             <div class = 'row'>
@@ -136,4 +155,9 @@
             </section><!-- aysel -->
             
         </body>
+<<<<<<< HEAD
     </html>
+=======
+    </html>
+    <script src="assets/js/main.js"></script>
+>>>>>>> upstream/master

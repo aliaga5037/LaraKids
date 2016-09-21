@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,10 +9,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', function()
 {
 	return view('kids.index');
+<<<<<<< HEAD
 });
 
 Route::get('/about',function(){
@@ -32,3 +31,25 @@ Route::get('/contact',function(){
 	return view('kids.contactUs');
 });
 
+=======
+});
+Route::get('/about',function()
+{
+return view('kids.aboutUs');
+});
+Route::get('/portfolio',function()
+{
+return view('kids.portfolio');
+});
+Route::get('/services',function()
+{
+return view('kids.services');
+});
+Route::get('/contact',function()
+{
+return view('kids.contactUs');
+});
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+>>>>>>> upstream/master

@@ -362,6 +362,9 @@
                             </div>
                         </div>
                         </section><!-- murad -->
+<<<<<<< HEAD
                         <img src="assets/images/top.png" title="Go To Top" class="top">
                         
+=======
+>>>>>>> upstream/master
                         @stop
