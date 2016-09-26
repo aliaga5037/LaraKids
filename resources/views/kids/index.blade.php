@@ -1,5 +1,9 @@
 @extends('layouts.index')
 @section('content')
+<?php
+    use App\Texts;
+    $text=Texts::all();
+?>
 <section id="slider" class="col-md-12 col-xs-12 col-sm-12" style="position: relative;top:50px;">
     <div class="row">
         <!-- Frame3 -->
@@ -68,8 +72,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4>Active Learning</h4>
-                    <p>Curabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+                    <h4><?php echo $text->find($id=8)->value; ?></h4>
+                    <p><?php echo $text->find($id=9)->value; ?></p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -77,8 +81,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4>Music Class</h4>
-                    <p>Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+                    <h4><?php echo $text->find($id=10)->value; ?></h4>
+                    <p><?php echo $text->find($id=11)->value; ?></p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -86,8 +90,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4>Yoga Class</h4>
-                    <p>Rabitur ultrices posuere mattis. Nam ullamcorper, diam sit euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl gedretu osterftra ligula</p>
+                    <h4><?php echo $text->find($id=12)->value; ?></h4>
+                    <p><?php echo $text->find($id=13)->value; ?></p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -95,8 +99,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4>Kung fu Class</h4>
-                    <p>Curabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+                    <h4><?php echo $text->find($id=14)->value; ?></h4>
+                    <p><?php echo $text->find($id=15)->value; ?></p>
                 </div>
             </div>
         </div>
@@ -105,24 +109,24 @@
         <div class="container">
             <div class="col-md-6">
                 <div class="row">
-                    <h2>Play As You Learn</h2>
+                    <h2><?php echo $text->find($id=16)->value; ?></h2>
                     <div class="col-md-6">
                         <div class="row">
                             <ul>
                                 <li>
                                     <i class="fa fa-glass"></i>
-                                    <p class="heading">English Summer Camp</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=18)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=19)->value; ?></p>
                                 </li>
                                 <li>
                                     <i class="fa fa-pencil"></i>
-                                    <p class="heading">Drawing & Painting</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=20)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=21)->value; ?></p>
                                 </li>
                                 <li>
                                     <i class="fa fa-bullseye"></i>
-                                    <p class="heading">Swimming Camp</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=22)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=23)->value; ?></p>
                                 </li>
                             </ul>
                         </div>
@@ -132,18 +136,18 @@
                             <ul>
                                 <li>
                                     <i class="fa fa-tachometer"></i>
-                                    <p class="heading">Sports Camp</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=24)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=25)->value; ?></p>
                                 </li>
                                 <li>
                                     <i class="fa fa-magic"></i>
-                                    <p class="heading">Personalizing</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=26)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=27)->value; ?></p>
                                 </li>
                                 <li>
                                     <i class="fa fa-music"></i>
-                                    <p class="heading">Sing & Dance</p>
-                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
+                                    <p class="heading"><?php echo $text->find($id=28)->value; ?></p>
+                                    <p class="text"><?php echo $text->find($id=29)->value; ?></p>
                                 </li>
                             </ul>
                         </div>
@@ -152,7 +156,7 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <h2>With Music4Kids, Music Is Child's Play!</h2>
+                    <h2><?php echo $text->find($id=17)->value; ?></h2>
                     
                     <div class="tablet">
                         <img src="assets/images/add1.jpg" class="img img-responsive">
@@ -168,7 +172,7 @@
         </section><!-- murad -->
         <section id="portfolio" class="col-md-12 col-xs-12 col-sm-12">
             <div class="container text-center">
-                <h2>Our Portfolio</h2>
+                <h2><?php echo $text->find($id=30)->value; ?></h2>
                 <img src="assets/images/gt.png" alt="">
                 <!-- HECTAGONS+++++++++++++++++++++++++++================ -->
                 <div class="hexa text-center">
@@ -216,7 +220,7 @@
             </section><!-- murad -->
             <section id="blog" class="col-md-12 col-xs-12 col-sm-12">
                 <div class="container text-center">
-                    <h2>Recent Blog</h2>
+                    <h2><?php echo $text->find($id=31)->value; ?></h2>
                     <img src="assets/images/gt3.png" class="line">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
@@ -275,31 +279,31 @@
                 </section><!-- murad -->
                 <section id="staffs" class="col-md-12 col-xs-12 col-sm-12">
                     <div class="container text-center">
-                        <h2>Our Staffs</h2>
+                        <h2><?php echo $text->find($id=32)->value; ?></h2>
                         <img src="assets/images/gt.png" class="line">
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team1.jpg" alt="">
-                            <h4>Jack Daniels</h4>
-                            <span>Senior Supervisor</span>
-                            <p>Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.</p>
+                            <h4><?php echo $text->find($id=33)->value; ?></h4>
+                            <span><?php echo $text->find($id=34)->value; ?></span>
+                            <p><?php echo $text->find($id=35)->value; ?></p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team2.jpg" alt="">
-                            <h4>Linda Glendell</h4>
-                            <span>Teaching Professor</span>
-                            <p>Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.</p>
+                            <h4><?php echo $text->find($id=36)->value; ?></h4>
+                            <span><?php echo $text->find($id=37)->value; ?></span>
+                            <p><?php echo $text->find($id=38)->value; ?></p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team3.jpg" alt="">
-                            <h4>Kate Dennings</h4>
-                            <span>Children Diet</span>
-                            <p>Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.</p>
+                            <h4><?php echo $text->find($id=39)->value; ?></h4>
+                            <span><?php echo $text->find($id=40)->value; ?></span>
+                            <p><?php echo $text->find($id=41)->value; ?></p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team4.jpg" alt="">
-                            <h4>Kristof Slinghot</h4>
-                            <span>Management</span>
-                            <p>Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.</p>
+                            <h4><?php echo $text->find($id=42)->value; ?></h4>
+                            <span><?php echo $text->find($id=43)->value; ?></span>
+                            <p><?php echo $text->find($id=44)->value; ?></p>
                         </div>
                     </div>
                     </section><!-- murad -->
