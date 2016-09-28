@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Admin;
 
-Use App\User;
-
-class UserController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +17,8 @@ class UserController extends Controller
      */
     public function index()
     {
-
+        // $admins=Admin::all();
+        // return view('adminPanel.index',compact('admins'));
     }
 
     /**
@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        // return view('AdminC.index');
     }
 
     /**
@@ -39,7 +39,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $admin=new Admin;
+        // $admin->name=$request->name;
+        // $admin->surname=$request->surname;
+        // $admin->email=$request->email;
+        // $admin->password=$request->password;
+        // $admin->save();
+        // return redirect('admin');
     }
 
     /**
@@ -50,7 +56,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+       // $admin = Admin::find($id);
+       //  return view('AdminC.show',compact('admin'));
     }
 
     /**
@@ -61,7 +68,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        // $admin = Admin::find($id);
+        // return view('AdminC.update',compact('admin'));
     }
 
     /**
@@ -73,9 +81,9 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Admin::find($id)->update($request->all());
+        // return redirect()->route('admin.index');
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -84,6 +92,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // $admin=Admin::find($id);
+        // $admin->delete();
+        // return back();
     }
 }

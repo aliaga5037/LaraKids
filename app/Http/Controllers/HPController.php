@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Texts;
 
-Use App\User;
-
-class UserController extends Controller
+class HPController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +17,8 @@ class UserController extends Controller
      */
     public function index()
     {
-
+        $texts=Texts::all();
+        return view('adminPanel.tenzim',compact('texts'));
     }
 
     /**
@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -50,7 +50,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $text=Texts::find($id);
+        return view('adminPanel.show',compact('text'));
     }
 
     /**
@@ -61,7 +62,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $texts=Texts::find($id);
+        return view('adminPanel.edit',compact('texts'));
     }
 
     /**
@@ -73,7 +75,8 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Texts::find($id)->update($request->all());
+        return redirect()->route('admin.tenzim.index');
     }
 
     /**
@@ -84,6 +87,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $text=Texts::find($id);
+        $text->delete();
+        return back();
     }
 }
