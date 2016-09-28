@@ -41,8 +41,12 @@ Route::get('/create', function(){
 });
 
 Route::group(['middleware'=> 'admin'],function(){
+	Route::group(['middleware'=> 'auth:admin'], function(){
+		Route::get('/admin', 'AdminController@index');
+	});
 
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/login', 'AdminController@login');
 Route::post('/admin/login', 'AdminController@postlogin');
+Route::get('/admin/logout','AdminController@logout');
 });
