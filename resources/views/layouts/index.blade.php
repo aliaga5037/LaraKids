@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
     <head>
+        <?php
+            use App\Texts;
+            $text=Texts::all();
+        ?>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,13 +19,6 @@
         <script src="{{url('assets/js/main.js')}}"></script>
         <script src="{{url('assets/js/slider.js')}}"></script>
         <script src="{{url('assets/js/main.js')}}"></script>
-    </head>
-    <body>
-        <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.css') }}">
-        <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
-        <link rel="stylesheet" href="{{ url('assets/awesome/css/font-awesome.css') }}">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
     </head>
     <body>
         <script src="{{ url('assets/js/jquery-3.1.0.js')}}"></script>
@@ -40,11 +37,15 @@
                 <div class = 'col-md-6'>
                     <div class = 'row1_right'>
                         <p>
-                            xxx@xxx.com
+                            <?php
+                               echo $text->find($id=1)->value;
+                            ?>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </p>
                         <p>
-                            1234567890
+                            <?php
+                               echo $text->find($id=2)->value;
+                            ?>
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </p>
                     </div>
@@ -65,11 +66,11 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-left">
-                            <li><a class = 'active red' href="{{url('/')}}">Home</a></li>
-                            <li><a class ='yellow' href="{{url('/about')}}">About Us</a></li>
-                            <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
-                            <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
-                            <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
+                            <li><a class = 'active red' href="{{url('/')}}"><?php echo $text->find($id=3)->value; ?></a></li>
+                            <li><a class ='yellow' href="{{url('/about')}}"><?php echo $text->find($id=4)->value; ?></a></li>
+                            <li><a class ='green' href="{{url('/portfolio')}}"><?php echo $text->find($id=5)->value; ?></a></li>
+                            <li><a class ='blue' href="{{url('/services')}}"><?php echo $text->find($id=6)->value; ?></a></li>
+                            <li><a class ='pink' href="{{url('/contact')}}"><?php echo $text->find($id=7)->value; ?></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class ='blue' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
