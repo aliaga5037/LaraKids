@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-
-Use App\User;
+use App\User;
 
 class UserController extends Controller
 {
@@ -18,7 +17,6 @@ class UserController extends Controller
      */
     public function index()
     {
-
     }
 
     /**

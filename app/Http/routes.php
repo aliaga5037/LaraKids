@@ -40,6 +40,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+
 // Route::resource('/admin', 'AdminController');
 
 Route::get('/admin',function()
@@ -53,3 +54,27 @@ Route::get('/admin/tenzim',function()
 });
 
 Route::resource('/admin/tenzim', 'HPController');
+
+
+// Route::resource('/admin', 'AdminController');
+
+Route::get('/create', function(){
+	return view('AdminC.create');
+});
+
+Route::group(['middleware'=> 'admin'],function(){
+	Route::group(['middleware'=> 'auth:admin'], function(){
+		Route::get('/admin', 'AdminController@index');
+	});
+
+Route::get('/admin/login', 'AdminController@login');
+Route::post('/admin/login', 'AdminController@postlogin');
+Route::get('/admin/logout','AdminController@logout');
+});
+
+Route::group(['middleware'=> 'hekimler'],function(){
+		Route::get('/hekimler', 'HekimController@index');
+		Route::get('/hekimler/login','HekimController@login');
+		Route::post('/hekimler/login','HekimController@postLogin');
+		Route::get('/hekimler/logout','HekimController@postLogout');
+});	
