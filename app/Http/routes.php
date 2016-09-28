@@ -32,3 +32,17 @@ return view('kids.contactUs');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+// Route::resource('/admin', 'AdminController');
+
+Route::get('/create', function(){
+	return view('AdminC.create');
+});
+
+Route::group(['middleware'=> 'admin'],function(){
+
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin/login', 'AdminController@login');
+Route::post('/admin/login', 'AdminController@postlogin');
+});
