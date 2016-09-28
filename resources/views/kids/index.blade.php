@@ -1,9 +1,9 @@
 @extends('layouts.index')
 @section('content')
-<?php
+{{-- <?php
     use App\Texts;
     $text=Texts::all();
-?>
+?> --}}
 <section id="slider" class="col-md-12 col-xs-12 col-sm-12" style="position: relative;top:50px;">
     <div class="row">
         <!-- Frame3 -->
