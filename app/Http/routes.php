@@ -45,8 +45,14 @@ Route::group(['middleware'=> 'admin'],function(){
 		Route::get('/admin', 'AdminController@index');
 	});
 
-Route::get('/admin', 'AdminController@index');
 Route::get('/admin/login', 'AdminController@login');
 Route::post('/admin/login', 'AdminController@postlogin');
 Route::get('/admin/logout','AdminController@logout');
 });
+
+Route::group(['middleware'=> 'hekimler'],function(){
+		Route::get('/hekimler', 'HekimController@index');
+		Route::get('/hekimler/login','HekimController@login');
+		Route::post('/hekimler/login','HekimController@postLogin');
+		Route::get('/hekimler/logout','HekimController@postLogout');
+});	

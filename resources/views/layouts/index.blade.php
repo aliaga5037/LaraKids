@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{{ url('assets/awesome/css/font-awesome.css') }}">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
     </head>
     <body>
         <script src="{{ url('assets/js/jquery-3.1.0.js')}}"></script>

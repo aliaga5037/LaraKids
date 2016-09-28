@@ -46,6 +46,10 @@ return [
             'provider' => 'admin',
         ],
 
+        'hekimler' => [
+            'driver' => 'session',
+            'provider' => 'hekimler',
+        ],
 
         'api' => [
             'driver' => 'token',
@@ -78,6 +82,11 @@ return [
             'admin' => [
             'driver' => 'eloquent',
             'model' => App\Admin::class,
+        ],
+
+            'hekimler' => [
+            'driver' => 'eloquent',
+            'model' => App\Hekimler::class,
         ],
 
 
