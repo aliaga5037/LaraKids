@@ -78,3 +78,7 @@ Route::group(['middleware'=> 'hekimler'],function(){
 		Route::post('/hekimler/login','HekimController@postLogin');
 		Route::get('/hekimler/logout','HekimController@postLogout');
 });	
+
+Route::get('/stats',function(){
+	return view('kids.meqaleler');
+});

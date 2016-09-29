@@ -59,6 +59,8 @@
                             <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
                             <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
                             <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
+
+                            <li><a class ='pink' href="{{url('/stats')}}">Məqalələr</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class ='blue' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
