@@ -12,11 +12,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('admins')->insert([
-        	'name'=> 'Leyla',
-        	'email'=> 'leyla.a@code.edu.az',
-        	'password'=> bcrypt('1234567890'),
+            'name'=> 'Leyla',
+            'email'=> 'leyla.a@code.edu.az',
+            'password'=> bcrypt('1234567890'),
 
 
-        	]);
+            ]);
+        DB::table('hekimlers')->insert([
+            'name'=> 'Leyla',
+            'email'=> 'leyla.a@box.az',
+            'password'=> bcrypt('1234567890'),
+
+
+            ]);
     }
 }

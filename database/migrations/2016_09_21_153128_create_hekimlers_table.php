@@ -18,6 +18,7 @@ class CreateHekimlersTable extends Migration
             $table->string('surname',255);
             $table->string('haqqinda',255);
             $table->string('email',255);
+            $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });

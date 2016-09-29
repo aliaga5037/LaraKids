@@ -3,33 +3,52 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Admin;
-
 use App\Http\Controllers\Controller;
 use Auth;
 class AdminController extends Controller
 {
-    
+    private $control;
+    private $redirect = '/admin';
     public function __construct()
     {
-            //$this->middleware('admin');
+        //$this->middleware('admin');
+        $this->control();
+       
     }
+
+    public function control()
+    {
+        if(auth()->guard('admin')->user() || auth()->guard('')->user() || auth()->guard('hekimler')->user() ){
+
+            $this->control = true;
+
+      }else{
+        $this->control = false;
+      }
+    }
+
        public function index()
     {
+
        return view('admin.index');
     }
 
     public function login()
     {
+        
+         if($this->control == true){
+            return redirect($this->redirect);
+        };
         return view ('auth.login-adm');
     }
 
       public function postLogin(Request $request)
     {
-
-        // return 'loginalindi';
+        if($this->control == true){
+            return redirect($this->redirect);
+        };
         
             $validator = validator($request->all(), [
                     'email' => 'required|min:3|max:100',
