@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{url('img/favicon.png')}}">
-    <title>Admin Login</title>
+    <title>Admin Giriş</title>
     <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{url('css/bootstrap-theme.css')}}" rel="stylesheet">
     <link href="{{url('css/elegant-icons-style.css')}}" rel="stylesheet" />
@@ -44,8 +44,8 @@
                 @endif
               </div>
               <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-                <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
+                <input type="checkbox" value="remember-me"> Yada sal
+                <span class="pull-right"> <a href="#">Parolu unutmusunuz</a></span>
               </label>
               <ul>
                 @if (Auth::guest())
@@ -56,7 +56,7 @@
                     {{ Auth::user()->name }} <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Çıxış</a></li>
                   </ul>
                 </li>
                 @endif
