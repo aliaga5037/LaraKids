@@ -30,7 +30,7 @@
         }
     </style>
 </head>
-<body id="app-layout">
+<body id="app-layout" class="login-img2-body">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -44,7 +44,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <img src="{{url('images/logo.png')}}">
+                <img src="{{url('images/logo.png')}}" style="width: 100px; height: 50px;">
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
