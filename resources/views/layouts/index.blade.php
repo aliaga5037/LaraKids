@@ -91,14 +91,14 @@
             <div class = 'row brd'>
                 <div class = 'col-md-4'>
                     <div class = 'col_wrapper'>
-                        <h2>Autist usaqlar haqqinda</h2>
+                        <h2>Autist uşaqlar haqqında</h2>
                         <img src="images/green_sketch.png">
                         <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
                 <div class = 'col-md-4'>
                     <div class = 'col_wrapper'>
-                        <h2>Son elave olunan serhler</h2>
+                        <h2>Son əlavə olunan şərhlər</h2>
                         <img src="images/yellow_sketch.png">
                         <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
                     </div>

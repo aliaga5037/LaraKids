@@ -155,11 +155,7 @@ input:focus, textarea:focus { outline: none; }
 .login-form a:hover {
     color: #34aadc;
 }
-/*.form .required{
-    font-size: 16px;
-    color: #00a0df;
-}
-*/
+
 .login-wrap {
     padding: 20px;
 }
