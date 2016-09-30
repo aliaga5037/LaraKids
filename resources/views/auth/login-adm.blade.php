@@ -1,58 +1,68 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url('img/favicon.png')}}">
+    <title>Admin Giriş</title>
+    <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url('css/bootstrap-theme.css')}}" rel="stylesheet">
+    <link href="{{url('css/elegant-icons-style.css')}}" rel="stylesheet" />
+    <link href="{{url('css/font-awesome.css')}}" rel="stylesheet" />
+    <link href="{{url('css/style.css')}}" rel="stylesheet">
+    <link href="{{url('css/style-responsive.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{url('https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css ')}}">
+  </head>
+  <body class="login-img3-body">
+    <div class="container" >
+      <form class="login-form"  method="POST" action="{{ url('/admin/login') }}">
+        {{ csrf_field() }}
+        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+          <div class="login-wrap" >
+            <p class="login-img"><i class="icon_lock_alt"></i></p>
+            <div class="input-group" >
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-            <div class="panel-heading">Login Admin</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/admin/login') }}">
-                        {{ csrf_field() }}
+               <span class="input-group-addon"><i class="icon_profile"></i></span>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+              <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" autofocus>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-sign-in"></i> Login
-                                </button>
-
-                            </div>
-                        </div>
-                    </form>
-                </div>
+              @if ($errors->has('email'))
+              <span class="help-block">
+                <strong>{{ $errors->first('email') }}</strong>
+              </span>
+              @endif
+              </div>
+              <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                @if ($errors->has('password'))
+                <span class="help-block">
+                  <strong>{{ $errors->first('password') }}</strong>
+                </span>
+                @endif
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Yada sal
+                <span class="pull-right"> <a href="#">Parolu unutmusunuz</a></span>
+              </label>
+              <ul>
+                @if (Auth::guest())
+                <li><a href="{{ url('/login') }}"><button class="btn btn-primary btn-lg btn-block" type="submit">Login</button></a></li>
+                @else
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Çıxış</a></li>
+                  </ul>
+                </li>
+                @endif
+              </ul>
             </div>
+          </form>
         </div>
-    </div>
-</div>
-@endsection
-
-
+      </body>
+    </html>

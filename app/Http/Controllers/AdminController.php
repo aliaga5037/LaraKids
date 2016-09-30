@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 
 use App\Admin;
-
 use App\Http\Controllers\Controller;
 use Auth;
 class AdminController extends Controller
@@ -19,6 +17,7 @@ class AdminController extends Controller
         //$this->middleware('admin');
         $this->control();
        
+
     }
 
     public function control()

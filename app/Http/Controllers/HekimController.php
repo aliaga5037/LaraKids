@@ -6,12 +6,29 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
+use App\Hekimler;
 class HekimController extends Controller
 {
+    private $control;
+    private $redirect = '/hekimler';
    public function __construct()
    {
    		// $this->middleware('auth');
+      $this->control();
+
    }
+   public function control()
+    {
+        if(auth()->guard('admin')->user() || auth()->guard('')->user() || auth()->guard('hekimler')->user() ){
+
+            $this->control = true;
+
+      }else{
+        $this->control = false;
+      }
+    }
+
+
    	public function index()
    	{
    		return view('hekimler.index');
@@ -22,6 +39,9 @@ class HekimController extends Controller
 
    public function login()
    {
+    if($this->control == true){
+            return redirect($this->redirect);
+        };
    	 return view('auth.login-hekim');
 
    }
@@ -40,9 +60,9 @@ class HekimController extends Controller
                   ->withInput();
        }
 
-        $credentials = ['email' => $request->get('mail'), 'password' => $request->get('password')];
+        $credentials = ['email' => $request->get('email'), 'password' => $request->get('password')];
 
-       if (auth()->guard('admin')->attempt($credentials)) 
+       if (auth()->guard('hekimler')->attempt($credentials)) 
        {
          return redirect('/hekimler');
        }else{
@@ -52,4 +72,9 @@ class HekimController extends Controller
        }
 
     }
-}
+        public function postLogout()
+        {
+            auth()->guard('hekimler')->logout();
+            return redirect('/hekimler/login');
+          }
+    }

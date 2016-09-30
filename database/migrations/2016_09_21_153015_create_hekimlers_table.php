@@ -14,10 +14,11 @@ class CreateHekimlersTable extends Migration
     {
         Schema::create('hekimlers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('surname');
-            $table->text('about');
-            $table->string('email')->unique();
+            $table->string('name',255);
+            $table->string('surname',255);
+            $table->string('haqqinda',255);
+            $table->string('email',255);
+            $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
