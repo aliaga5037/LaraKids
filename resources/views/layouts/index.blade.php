@@ -87,28 +87,32 @@
                 </div>
             </div>
         </div>
-        <div class = 'container'>
-            <div class = 'row brd'>
-                <div class = 'col-md-4'>
+        <div class = 'container-fluid'>
+            <div class = 'row '>
+                <div class = 'col-md-2 col-md-offset-2'>
                     <div class = 'col_wrapper'>
-                        <h2>Autist uşaqlar haqqında</h2>
+                        <h3>Autist uşaqlar haqqında</h3>
                         <img src="images/green_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsh5um dolor sit amet.Lorem ipsum dolor sit amet</h5>
                     </div>
                 </div>
-                <div class = 'col-md-4'>
+                <div class = 'col-md-2 '>
                     <div class = 'col_wrapper'>
-                        <h2>Son əlavə olunan şərhlər</h2>
+                        <h3>Son əlavə olunan şərhlər</h3>
                         <img src="images/yellow_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
                     </div>
                 </div>
-                <div class = 'col-md-4'>
+                <div class = 'col-md-2'>
                     <div class = 'col_wrapper'>
-                        <h2>Kontakt</h2>
+                        <h3>Kontakt</h3>
                         <img src="images/red_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                        <h3>We are social</h3>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
+                    </div>
+                </div>
+                <div class= 'col-md-3 ' >
+                    <div class= 'col_wrapper'>
+                        <h3>We're social</h3>
                         <div class = 'social'>
                             <input type="text" name="">
                             <button>Subscribe</button>
