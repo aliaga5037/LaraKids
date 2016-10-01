@@ -40,7 +40,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-
+Route::get('/stat/{id}', 'StatController@find');
 // Route::resource('/admin', 'AdminController');
 
 

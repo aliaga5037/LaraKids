@@ -23,7 +23,7 @@
         <script src="{{ url('assets/js/slider.js')}}"></script>
     </head>
     <body>
-        <section id='header'><!-- aysel -->
+        <section id='header' ><!-- aysel -->
         <!-- <div class = 'container-fluid'> -->
         <div class = 'container'>
             <div class = 'row'>
@@ -48,7 +48,7 @@
         </div>
         <!-- </div> -->
         <div class = 'mn'>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default ">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

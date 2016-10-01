@@ -1,20 +1,13 @@
 @extends('layouts.index');
 @section('content')
-<?php
-use App\Meqale;
-
-$parts=Meqale::all();
-?>
-<section id="blog" class="col-md-12 col-sm-12 col-xs-12">
-	
+<section id="blog" class="col-md-12 col-sm-12 col-sm-12 col-xs-12">
 	<div class="container text-center">
-	@foreach($parts as $part)
-		<div class="col-md-6 col-sm-12 col-xs-12">
+		<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 			<div class="row">
 				<div class="data col-md-3 col-sm-3 col-xs-3 text-center">
 					<img src="assets/images/service1.jpg" alt="">
 					<div class="date">
-						<p>{{$part->created_at}}</p>
+						<p>{{$tarix}}</p>
 						
 					</div>
 					<div class="comments date">
@@ -28,16 +21,14 @@ $parts=Meqale::all();
 				<div class="textAndPhoto col-md-9 text-left col-sm-9 col-xs-9">
 					<div class="row">
 						<img src="assets/images/blog_img1.jpg" class="img img-responsive">
-						<a href="{{url('stat',$part->id)}}"><h3><b>{{$part->title}}</b></h3></a>
-						<p>{{substr($part->text,0,350)}}</p>
+						<a><h3><b>{{$basliq}}</b></h3></a>
+						<p>{{$sonmeqale}}</p>
 					</div>
-					 <a href="{{url('stat',$part->id)}}"><button >Ətraflı <i class="fa fa-chevron-right"></i></button></a>
+					
 				</div>
 
 			</div>
 		</div>
-	@endforeach
 	</div>
-	
 </section>
 @endsection
