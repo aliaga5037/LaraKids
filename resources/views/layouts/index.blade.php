@@ -1,10 +1,6 @@
 <!doctype html>
 <html>
     <head>
-        <?php
-        use App\Texts;
-        $text=Texts::all();
-        ?>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,15 +35,11 @@
                 <div class = 'col-md-6'>
                     <div class = 'row1_right'>
                         <p>
-                            <?php
-                            echo $text->find($id=1)->value;
-                            ?>
+                            xxx@gmail.com
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </p>
                         <p>
-                            <?php
-                            echo $text->find($id=2)->value;
-                            ?>
+                            123456789
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </p>
                     </div>
@@ -74,8 +66,10 @@
                             <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
                             <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
                             <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
-                            <li><a class ='pink' href="{{url('/stats')}}">Məqalələr</a></li>
-                           
+                            <li><a class ='yellow' href="{{url('/stats')}}">Məqalələr</a></li>
+                            <li><a class ='green' href="{{url('/login')}}">Daxil ol</a></li>
+                            <li><a class ='blue' href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
+                            <li><a class ='pink' href="{{url('/logout')}}">Çıxış et</a></li>                           
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class ='blue' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
@@ -153,7 +147,6 @@
                 </div>
             </div>
             </section><!-- aysel -->
-            
         </body>
     </html>
 </html>

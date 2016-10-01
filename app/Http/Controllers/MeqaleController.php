@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use App\meqale;
 
+use App\Hekimler;
+
 class MeqaleController extends Controller
 {
     /**
@@ -17,9 +19,9 @@ class MeqaleController extends Controller
      */
     public function index()
     {
-        $table=Meqale::all();
+        $meqaleler=Meqale::all();
 
-        return view('hekimler.index');
+        return view('hekimler.index',compact('meqaleler'));
     }
 
     /**
@@ -29,7 +31,7 @@ class MeqaleController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -40,7 +42,10 @@ class MeqaleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Meqale::create($request->all());
+
+        $meqaleler=Meqale::all();
+        return view('hekimler.index',compact('meqaleler'));
     }
 
     /**
@@ -51,7 +56,8 @@ class MeqaleController extends Controller
      */
     public function show($id)
     {
-        //
+        $found=Meqale::find($id);
+        return view('hekimler.show',compact('found'));
     }
 
     /**
@@ -62,7 +68,8 @@ class MeqaleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $meqale = Meqale::find($id);
+        return view('hekimler.update',compact('meqale'));
     }
 
     /**
@@ -74,7 +81,9 @@ class MeqaleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Meqale::find($id)->update($request->all());
+        $meqaleler=Meqale::all();
+        return view('hekimler.index',compact('meqaleler'));
     }
 
     /**
@@ -85,6 +94,8 @@ class MeqaleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $meqale=Meqale::find($id);
+        $meqale->delete();
+        return back();
     }
 }

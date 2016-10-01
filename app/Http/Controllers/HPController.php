@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Texts;
+
 
 class HPController extends Controller
 {
@@ -17,8 +17,8 @@ class HPController extends Controller
      */
     public function index()
     {
-        $texts=Texts::all();
-        return view('adminPanel.tenzim',compact('texts'));
+        // $texts=Texts::all();
+        // return view('adminPanel.tenzim',compact('texts'));
     }
 
     /**
@@ -50,8 +50,8 @@ class HPController extends Controller
      */
     public function show($id)
     {
-        $text=Texts::find($id);
-        return view('adminPanel.show',compact('text'));
+        // $text=Texts::find($id);
+        // return view('adminPanel.show',compact('text'));
     }
 
     /**
@@ -62,8 +62,8 @@ class HPController extends Controller
      */
     public function edit($id)
     {
-        $texts=Texts::find($id);
-        return view('adminPanel.edit',compact('texts'));
+        // $texts=Texts::find($id);
+        // return view('adminPanel.edit',compact('texts'));
     }
 
     /**
@@ -75,8 +75,8 @@ class HPController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Texts::find($id)->update($request->all());
-        return redirect()->route('admin.tenzim.index');
+        // Texts::find($id)->update($request->all());
+        // return redirect()->route('admin.tenzim.index');
     }
 
     /**
@@ -87,8 +87,8 @@ class HPController extends Controller
      */
     public function destroy($id)
     {
-        $text=Texts::find($id);
-        $text->delete();
-        return back();
+        // $text=Texts::find($id);
+        // $text->delete();
+        // return back();
     }
 }

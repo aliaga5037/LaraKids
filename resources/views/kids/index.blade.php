@@ -1,9 +1,5 @@
 @extends('layouts.index')
 @section('content')
-{{-- <?php
-    use App\Texts;
-    $text=Texts::all();
-?> --}}
 <section id="slider" class="col-md-12 col-xs-12 col-sm-12" style="position: relative;top:50px;">
     <div class="row">
         <!-- Frame3 -->
@@ -72,8 +68,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4><?php echo $text->find($id=8)->value; ?></h4>
-                    <p><?php echo $text->find($id=9)->value; ?></p>
+                    <h4>İnteraktiv oyunlar</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eos nobis velit eligendi laborum quasi reprehenderit debitis, natus nisi quia, voluptatibus tempore dicta laudantium esse voluptas eum ratione porro cum!</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -81,8 +77,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4><?php echo $text->find($id=10)->value; ?></h4>
-                    <p><?php echo $text->find($id=11)->value; ?></p>
+                    <h4>Öyrədici animasiyalar</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil harum, laborum dolore quisquam qui esse alias atque ex animi repudiandae aspernatur ducimus veritatis nesciunt error in earum non minima voluptatem.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -90,8 +86,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4><?php echo $text->find($id=12)->value; ?></h4>
-                    <p><?php echo $text->find($id=13)->value; ?></p>
+                    <h4>Həkim məsləhəti</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corrupti nisi quam? Ab culpa voluptatem dolorem laboriosam aperiam fugiat cum velit, quam nihil necessitatibus quisquam temporibus ut, quas aliquam fugit!</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="img">
@@ -99,8 +95,8 @@
                         <div class="circle"></div>
                         <i class="fa fa-link"></i>
                     </div>
-                    <h4><?php echo $text->find($id=14)->value; ?></h4>
-                    <p><?php echo $text->find($id=15)->value; ?></p>
+                    <h4>Həkimlərlə əlaqə</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vitae ea fuga officiis dignissimos quia, est expedita eaque optio sequi dolorem, a enim cupiditate quas assumenda quod ratione unde itaque!</p>
                 </div>
             </div>
         </div>
@@ -109,24 +105,24 @@
         <div class="container">
             <div class="col-md-6">
                 <div class="row">
-                    <h2><?php echo $text->find($id=16)->value; ?></h2>
+                    <h2>Play As You Learn</h2>
                     <div class="col-md-6">
                         <div class="row">
                             <ul>
                                 <li>
                                     <i class="fa fa-glass"></i>
-                                    <p class="heading"><?php echo $text->find($id=18)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=19)->value; ?></p>
+                                    <p class="heading">English Summer Camp</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-pencil"></i>
-                                    <p class="heading"><?php echo $text->find($id=20)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=21)->value; ?></p>
+                                    <p class="heading">Drawing & Painting</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-bullseye"></i>
-                                    <p class="heading"><?php echo $text->find($id=22)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=23)->value; ?></p>
+                                    <p class="heading">Swimming Camp</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                             </ul>
                         </div>
@@ -136,18 +132,18 @@
                             <ul>
                                 <li>
                                     <i class="fa fa-tachometer"></i>
-                                    <p class="heading"><?php echo $text->find($id=24)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=25)->value; ?></p>
+                                    <p class="heading">Sports Camp</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-magic"></i>
-                                    <p class="heading"><?php echo $text->find($id=26)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=27)->value; ?></p>
+                                    <p class="heading">Personalizing</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-music"></i>
-                                    <p class="heading"><?php echo $text->find($id=28)->value; ?></p>
-                                    <p class="text"><?php echo $text->find($id=29)->value; ?></p>
+                                    <p class="heading">Sing & Dance</p>
+                                    <p class="text">Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....</p>
                                 </li>
                             </ul>
                         </div>
@@ -156,7 +152,7 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <h2><?php echo $text->find($id=17)->value; ?></h2>
+                    <h2>With Music4Kids, Music Is Child's Play!</h2>
                     
                     <div class="tablet">
                         <img src="assets/images/add1.jpg" class="img img-responsive">
@@ -172,7 +168,7 @@
         </section><!-- murad -->
         <section id="portfolio" class="col-md-12 col-xs-12 col-sm-12">
             <div class="container text-center">
-                <h2><?php echo $text->find($id=30)->value; ?></h2>
+                <h2>Our Portfolio</h2>
                 <img src="assets/images/gt.png" alt="">
                 <!-- HECTAGONS+++++++++++++++++++++++++++================ -->
                 <div class="hexa text-center">
@@ -220,7 +216,7 @@
             </section><!-- murad -->
             <section id="blog" class="col-md-12 col-xs-12 col-sm-12">
                 <div class="container text-center">
-                    <h2><?php echo $text->find($id=31)->value; ?></h2>
+                    <h2>Blogs</h2>
                     <img src="assets/images/gt3.png" class="line">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="row">
@@ -279,31 +275,31 @@
                 </section><!-- murad -->
                 <section id="staffs" class="col-md-12 col-xs-12 col-sm-12">
                     <div class="container text-center">
-                        <h2><?php echo $text->find($id=32)->value; ?></h2>
+                        <h2>Komandamız</h2>
                         <img src="assets/images/gt.png" class="line">
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team1.jpg" alt="">
-                            <h4><?php echo $text->find($id=33)->value; ?></h4>
-                            <span><?php echo $text->find($id=34)->value; ?></span>
-                            <p><?php echo $text->find($id=35)->value; ?></p>
+                            <h4>Murad Mikayilzadə</h4>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus tenetur atque officiis, doloribus nam aliquam consectetur ipsum eum molestiae sed, quis, voluptatibus. Eum ad, officiis, ullam dignissimos maxime illum!</p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team2.jpg" alt="">
-                            <h4><?php echo $text->find($id=36)->value; ?></h4>
-                            <span><?php echo $text->find($id=37)->value; ?></span>
-                            <p><?php echo $text->find($id=38)->value; ?></p>
+                            <h4>Murad Mikayilzadə</h4>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo praesentium possimus velit ad maiores doloremque facilis, nemo reiciendis quo pariatur eius sint, earum, modi provident quasi totam amet deleniti explicabo.</p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team3.jpg" alt="">
-                            <h4><?php echo $text->find($id=39)->value; ?></h4>
-                            <span><?php echo $text->find($id=40)->value; ?></span>
-                            <p><?php echo $text->find($id=41)->value; ?></p>
+                            <h4>Leyla Abbasova</h4>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iste numquam assumenda praesentium maxime esse, voluptates vel nemo eius ea aliquid enim optio ad nisi ut pariatur animi, deleniti sunt.</p>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-12">
                             <img src="assets/images/team4.jpg" alt="">
-                            <h4><?php echo $text->find($id=42)->value; ?></h4>
-                            <span><?php echo $text->find($id=43)->value; ?></span>
-                            <p><?php echo $text->find($id=44)->value; ?></p>
+                            <h4>Leyla Abbasova</h4>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iste numquam assumenda praesentium maxime esse, voluptates vel nemo eius ea aliquid enim optio ad nisi ut pariatur animi, deleniti sunt.</p>
                         </div>
                     </div>
                     </section><!-- murad -->

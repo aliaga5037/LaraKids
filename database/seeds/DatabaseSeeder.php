@@ -20,10 +20,10 @@ class DatabaseSeeder extends Seeder
             ]);
         DB::table('hekimlers')->insert([
             'name'=> 'Leyla',
+            'surname'=> 'Abbasova',
             'email'=> 'leyla.a@box.az',
             'password'=> bcrypt('1234567890'),
-
-
+            'about'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam a laudantium consectetur rerum, tempora voluptatem dolore officia voluptatum impedit cumque minima eaque aspernatur ipsa? Repellendus facilis culpa, mollitia cumque possimus.'
             ]);
     }
-}
+}   
