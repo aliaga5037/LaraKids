@@ -1303,15 +1303,23 @@ html, body {
 
 #itemOne {
   background-color: #FFC0CB; }
+  #itemOne p {
+    font-size: 18px; }
 
 #itemTwo {
   background-color: #4EC1DB; }
+  #itemTwo p {
+    font-size: 18px; }
 
 #itemThree {
   background-color: #FEBB9D; }
+  #itemThree p {
+    font-size: 18px; }
 
 #itemFour {
   background-color: #FEA54A; }
+  #itemFour p {
+    font-size: 18px; }
 
 #itemOne, #itemTwo, #itemThree, #itemFour, .content {
   float: left;
@@ -1321,18 +1329,6 @@ html, body {
   background-repeat: no-repeat;
   border-radius: 5%;
   color: white; }
-
-#itemOne .content p {
-  font-size: 18px; }
-
-#itemTwo .content p {
-  font-size: 18px; }
-
-#itemThree .content p {
-  font-size: 18px; }
-
-#itemFour .content p {
-  font-size: 18px; }
 
 #contentContainer {
   width: 550px;

@@ -55,7 +55,7 @@
                                 </div>
                                 <div id="itemTwo"  id="items" class="content">
                                   
-                    <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.specimen book. It has survived not only five centuries.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p>
+                    <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type standard dummy text ever since the 1500s, when an unknown printer. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.specimen book. It has survived not only five centuries.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p>
                                 </div>
                                 <div id="itemThree"  id="items" class="content">
                                 

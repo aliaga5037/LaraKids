@@ -101,7 +101,7 @@ $('.mn').removeClass('fixed');
 // //  	$(this).css({backgroundColor: 'white', color: 'blue'}).stop().slideToggle(600);
 // //  });
 });
-//  * Leyla   contact Us  slideri    --------------------------------------
+//  * Leyla   about Us  slideri    --------------------------------------
 imgs = ['assets/images/activity1.jpg','assets/images/activity2.jpg','assets/images/activity3.jpg','assets/images/activity1.jpg','assets/images/activity2.jpg','assets/images/activity3.jpg']
 var sliderWidth=576;
 var sliderHeight=274;
@@ -122,7 +122,7 @@ position: 'relative',
 bottom:sliderHeight/2+25+'px',
 height:'50px',
 })
-// contact Us slideri  bitdi -------------------------------------------------
+// about Us slideri  bitdi -------------------------------------------------
 
 $(".frame")
 .css({
@@ -152,11 +152,14 @@ boxShadow:"0px 0px 5px white"
 })
 .addClass('pull-left btn btn-primary')
 .on('click', function() {
-count--;
+
 if (count == 0) {
 
-count=imgs.length ;
+count=(imgs.length - 1) ;
+
 }
+count--;
+
 $('.frame')
 .css({
 backgroundImage:"url("+imgs[count]+")"
@@ -177,6 +180,7 @@ boxShadow:"0px 0px 5px white"
 })
 .addClass('pull-right btn btn-primary')
 .on('click', function() {
+	console.log(count);
 count++;
 if (count == imgs.length) {
 
