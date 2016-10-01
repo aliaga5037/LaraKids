@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\meqale;
+use App\Meqale;
 
 use App\Hekimler;
 
@@ -42,10 +42,15 @@ class MeqaleController extends Controller
      */
     public function store(Request $request)
     {
-        Meqale::create($request->all());
+        $hekim= Hekimler::find(auth()->guard('hekimler')->user()->id);
 
-        $meqaleler=Meqale::all();
-        return view('hekimler.index',compact('meqaleler'));
+        $meqale = new Meqale;
+
+        $meqale->title=$request->title;
+        $meqale->text=$request->text;
+
+        $hekim->meqale()->save($meqale);
+        return redirect('/hekimler');
     }
 
     /**
@@ -97,5 +102,17 @@ class MeqaleController extends Controller
         $meqale=Meqale::find($id);
         $meqale->delete();
         return back();
+    }
+
+    public function find($id)
+    {
+        $tapildi=Meqale::where('id',$id)->first();
+        $tapildi2=$tapildi->hekimler_id;
+
+        $tapildiSon=Hekimler::where('id',$tapildi2)->first();
+        $finishName=$tapildiSon->name;
+        $finishSurname=$tapildiSon->surname;
+        $finishAbout=$tapildiSon->about;
+        return view('kids.profiles',compact('finishName','finishSurname','finishAbout'));
     }
 }

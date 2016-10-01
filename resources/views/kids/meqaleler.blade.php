@@ -2,19 +2,17 @@
 @section('content')
 <?php
 use App\Meqale;
-
 $parts=Meqale::all();
 ?>
 <section id="blog" class="col-md-12 col-sm-12 col-xs-12">
-	
 	<div class="container text-center">
-	@foreach($parts as $part)
+		@foreach($parts as $part)
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="row">
 				<div class="data col-md-3 col-sm-3 col-xs-3 text-center">
-					<img src="{{url('assets/images/service1.jpg')}}" alt="">
+					<a href="{{url('hekimler/find',$part->id)}}"><img src="{{url('assets/images/service1.jpg')}}" alt=""></a>
 					<div class="date">
-						<p>{{$part->created_at}}</p>
+						<p>{{$part->created_at->diffForHumans()}}</p>
 						
 					</div>
 					<div class="comments date">
@@ -31,12 +29,12 @@ $parts=Meqale::all();
 						<a href="{{url('stat',$part->id)}}"><h3><b>{{$part->title}}</b></h3></a>
 						<p>{{substr($part->text,0,350)}}</p>
 					</div>
-					 <a href="{{url('stat',$part->id)}}"><button >Ətraflı <i class="fa fa-chevron-right"></i></button></a>
+					<a href="{{url('stat',$part->id)}}"><button >Ətraflı <i class="fa fa-chevron-right"></i></button></a>
 				</div>
-
 			</div>
 		</div>
-	@endforeach
+		@endforeach
+		
 	</div>
 	
 </section>

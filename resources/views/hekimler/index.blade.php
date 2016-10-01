@@ -1,7 +1,6 @@
 <?php
 use App\Hekimler;
 ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -35,6 +34,7 @@ use App\Hekimler;
 				<p>{{-- Xoş gəldiniz, {{$name}} --}}</p>
 				<a class="btn btn-success createButton">Məqalə Yazın</a>
 				<a href="{{url('/hekimler/logout')}}" class="btn btn-danger">Çıxış et</a>
+				
 				<table class="table">
 					<thead>
 						<tr>

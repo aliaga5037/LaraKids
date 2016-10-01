@@ -5,9 +5,9 @@
 		<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 			<div class="row">
 				<div class="data col-md-3 col-sm-3 col-xs-3 text-center">
-					<img src="{{url('assets/images/service1.jpg')}}" alt="">
+					<a href="{{url('hekimler/find',$id)}}"><img src="{{url('assets/images/service1.jpg')}}" alt=""></a>
 					<div class="date">
-						<p>{{$tarix}}</p>
+						<p>{{$tarix->diffForHumans()}}</p>
 					</div>
 					<div class="comments date">
 						<span>12</span>

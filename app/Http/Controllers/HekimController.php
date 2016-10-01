@@ -32,7 +32,9 @@ class HekimController extends Controller
 
    	public function index()
    	{
-      $meqaleler=Meqale::all();
+      $id = auth()->guard('hekimler')->user()->id;
+      
+      $meqaleler=Meqale::where('hekimler_id',$id)->get();
       return view('hekimler.index',compact('meqaleler'));
    	}
 
@@ -40,7 +42,7 @@ class HekimController extends Controller
    public function login()
    {
     if($this->control == true){
-        return redirect($this->redirect);
+        return redirect('hekimler');
         };
         return view('auth.login-hekim');
      
@@ -59,8 +61,6 @@ class HekimController extends Controller
          return redirect('/hekimler/login')
                   ->withErrors($validator)
                   ->withInput();
-       }else{
-          return redirect('hekimler');
        }
 
         $credentials = ['email' => $request->get('email'), 'password' => $request->get('password')];
@@ -78,6 +78,6 @@ class HekimController extends Controller
         public function postLogout()
         {
             auth()->guard('hekimler')->logout();
-            return redirect('/hekimler/login');
+            return redirect('/hekimler/logout');
           }
     }

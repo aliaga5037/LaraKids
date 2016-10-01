@@ -57,6 +57,9 @@ Route::get('/hekimler/show/{id}','MeqaleController@show');
 Route::get('/hekimler/edit/{id}','MeqaleController@edit');
 Route::get('/hekimler/destroy/{id}','MeqaleController@destroy');
 Route::post('/hekimler/store', 'MeqaleController@store');
+
+Route::get('/hekimler/find/{id}', 'MeqaleController@find');
+
 Route::post('/hekimler/update/{id}', 'MeqaleController@update');
 
 Route::group(['middleware'=> 'admin'],function(){
