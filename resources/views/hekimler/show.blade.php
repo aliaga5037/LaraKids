@@ -13,10 +13,10 @@
 		<div class="container-fluid">
 			<h3><b>Göstər</b></h3>
 			<br>
-			Məqalə adı:{{$found->title}}
+			<b>Məqalə adı:</b>{{$found->title}}
 			<br>
 			{{-- {{dd($found)}} --}}
-			Məqalə kontenti:{{$found->text}}
+			<b>Məqalə kontenti:</b>{{$found->text}}
 			<br>
 			<a href="{{url('hekimler')}}" class="btn btn-danger">Qayıt</a>
 		</div>

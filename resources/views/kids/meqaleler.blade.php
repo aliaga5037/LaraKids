@@ -1,4 +1,4 @@
-@extends('layouts.index');
+@extends('layouts.index')
 @section('content')
 <?php
 use App\Meqale;
