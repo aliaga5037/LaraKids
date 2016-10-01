@@ -29,7 +29,7 @@
             <div class = 'row'>
                 <div class = 'col-md-6'>
                     <div class = 'row1_left'>
-                        <img src="images/logo.png">
+                        <img src="{{url('images/logo.png')}}">
                     </div>
                 </div>
                 <div class = 'col-md-6'>
@@ -84,13 +84,13 @@
     </section>
     @yield('content')
     
-    <img src="assets/images/top.png" title="Go To Top" class="top">
+    <img src="{{url('assets/images/top.png')}}" title="Go To Top" class="top">
     <section id="about">
         <div class = 'container-fluid'>
             <div class = 'row'>
                 <div class = 'col-md-12'>
                     <div class = 'image_wrapper'>
-                        <img src="images/footer_top_bg.png"/>
+                        <img src="{{url('images/footer_top_bg.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -100,21 +100,21 @@
                 <div class = 'col-md-4'>
                     <div class = 'col_wrapper'>
                         <h2>Autist usaqlar haqqinda</h2>
-                        <img src="images/green_sketch.png">
+                        <img src="{{url('images/green_sketch.png')}}">
                         <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
                 <div class = 'col-md-4'>
                     <div class = 'col_wrapper'>
                         <h2>Son elave olunan serhler</h2>
-                        <img src="images/yellow_sketch.png">
+                        <img src="{{url('images/yellow_sketch.png')}}">
                         <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
                 <div class = 'col-md-4'>
                     <div class = 'col_wrapper'>
                         <h2>Kontakt</h2>
-                        <img src="images/red_sketch.png">
+                        <img src="{{url('images/red_sketch.png')}}">
                         <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
                         <h3>We are social</h3>
                         <div class = 'social'>

@@ -12,7 +12,7 @@ $parts=Meqale::all();
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="row">
 				<div class="data col-md-3 col-sm-3 col-xs-3 text-center">
-					<img src="assets/images/service1.jpg" alt="">
+					<img src="{{url('assets/images/service1.jpg')}}" alt="">
 					<div class="date">
 						<p>{{$part->created_at}}</p>
 						
@@ -27,7 +27,7 @@ $parts=Meqale::all();
 				</div>
 				<div class="textAndPhoto col-md-9 text-left col-sm-9 col-xs-9">
 					<div class="row">
-						<img src="assets/images/blog_img1.jpg" class="img img-responsive">
+						<img src="{{url('assets/images/blog_img1.jpg')}}" class="img img-responsive">
 						<a href="{{url('stat',$part->id)}}"><h3><b>{{$part->title}}</b></h3></a>
 						<p>{{substr($part->text,0,350)}}</p>
 					</div>

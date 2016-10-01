@@ -12,16 +12,7 @@
 		</style>
 	</head>
 	<body>
-		<h3><b>Təzələyin</b></h3>
-		{{-- {!! Form::open(['url' => 'hekimler/update' , 'method'=>'post']) !!}<br>
-		Məqalə adı:
-		{!! Form::text('title',"$meqale->title",['class' => 'form-control'])!!}<br>
-		Məqalə kontenti:<br>
-		{{ Form::textarea('text',"$meqale->text",['class' => 'form-control'])}}
-		
-		{!! Form::submit('save')!!}
-		{!! Form::close() !!} --}}
-		
+		<h3><b>Təzələyin</b></h3>		
 		{!! Form::model($meqale,['url' => ['/hekimler/update', $meqale->id],'method' => 'post']) !!}
 				<strong>Başlıq</strong>
 			    {!! Form::text('title',"$meqale->title",['class'=>'form-control'])!!}<br>
