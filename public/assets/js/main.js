@@ -308,7 +308,7 @@ return properties[i];
 }
 return null;
 }
-//avtomatik hereket elesin deye
+// words our parents avtomatik hereket elesin deye
 var timeoutID;
 
 function startTimer() {

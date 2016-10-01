@@ -1302,24 +1302,28 @@ html, body {
   background-repeat: no-repeat; }
 
 #itemOne {
-  background-color: #FFC0CB; }
+  background-color: #FEBB9D; }
   #itemOne p {
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 20px 20px 20px 20px; }
 
 #itemTwo {
   background-color: #4EC1DB; }
   #itemTwo p {
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 20px 20px 20px 20px; }
 
 #itemThree {
-  background-color: #FEBB9D; }
+  background-color: #FFC0CB; }
   #itemThree p {
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 20px 20px 20px 20px; }
 
 #itemFour {
   background-color: #FEA54A; }
   #itemFour p {
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 20px 20px 20px 20px; }
 
 #itemOne, #itemTwo, #itemThree, #itemFour, .content {
   float: left;
