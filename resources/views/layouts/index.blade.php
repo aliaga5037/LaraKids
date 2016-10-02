@@ -101,28 +101,32 @@
                 </div>
             </div>
         </div>
-        <div class = 'container'>
-            <div class = 'row brd'>
-                <div class = 'col-md-4'>
+        <div class = 'container-fluid'>
+            <div class = 'row '>
+                <div class = 'col-md-2 col-md-offset-2'>
                     <div class = 'col_wrapper'>
-                        <h2>Autist usaqlar haqqinda</h2>
+                        <h5>Autist uşaqlar haqqında</h5>
                         <img src="images/green_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsh5um dolor sit amet.Lorem ipsum dolor sit amet</h5>
                     </div>
                 </div>
-                <div class = 'col-md-4'>
+                <div class = 'col-md-2 '>
                     <div class = 'col_wrapper'>
-                        <h2>Son elave olunan serhler</h2>
+                        <h5>Son əlavə olunan şərhlər</h5>
                         <img src="images/yellow_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
                     </div>
                 </div>
-                <div class = 'col-md-4'>
+                <div class = 'col-md-2'>
                     <div class = 'col_wrapper'>
-                        <h2>Kontakt</h2>
+                        <h5>Kontakt</h5>
                         <img src="images/red_sketch.png">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                        <h3>We are social</h3>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
+                    </div>
+                </div>
+                <div class= 'col-md-3 ' >
+                    <div class= 'col_wrapper'>
+                        <h5>We're social</h5>
                         <div class = 'social'>
                             <input type="text" name="">
                             <button>Subscribe</button>

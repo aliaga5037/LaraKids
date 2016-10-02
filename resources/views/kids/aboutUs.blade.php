@@ -20,6 +20,7 @@
                     </script>
                 </div>
             </div>
+{{-- <<<<<<< HEAD
             
             <div class="col-md-5 col-xs-12" >
                 <h2><b>Our Leisure Time<b></h2>
@@ -27,7 +28,47 @@
                 <button type="button" class="btn btn-md ">Read More <i class="glyphicon glyphicon-menu-right"></i>
                 </button>
             </div>
+======= --}}
+            <p>Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus. Sed cursus ipsum vitae justo scelerisque, ac viverra tellus eleifend. Etiam interdum justo nunc, ac volutpat erat elementum id. Fusce dapibus mauris ac dictum porta. Sed pretium luctus elementum. In sollicitudin felis semper purus imperdiet lobortis. In odio tellus, rhoncus eget dolor in,</p>
+        </div>
+        <div class="col-md-6 col-xs-12" class="changeText">
+            <h3><b>Some Words from Parents</b></h3>
+                        <div id="contentContainer">
+                            <div id="wrapper">
+                                <div id="itemOne"  id="items" class="content">
+                
+                      <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type standard dummy text ever since the 1500s, when an unknown printer took.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p>
+                                </div>
+                                <div id="itemTwo"  id="items" class="content">
+                                  
+                    <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.specimen book. It has survived not only five centuries.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p>
+                                </div>
+                                <div id="itemThree"  id="items" class="content">
+                                
+                         <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.specimen book.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p> 
+                                </div>
+                                <div id="itemFour"  id="items" class="content">
+                                  
+                    <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley text ever since the 1500s,  a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.specimen book. It has survived not only five centuries.<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></p>
+                                </div>
+                   
+                            </div>
+
+                        </div>
             
+                        <div id="navLinks">
+                            <ul>
+                                <li class="itemLinks" data-pos="0px"></li>
+                                <li class="itemLinks" data-pos="-550px"></li>
+                                <li class="itemLinks" data-pos="-1100px"></li>
+                                <li class="itemLinks" data-pos="-1650px"></li>
+                            </ul>
+                        </div>
+                       
+                        <script type="text/javascript">
+                   
+                        
+                        </script>
         </div>
     </div>
     <div class="clearfix"></div>
