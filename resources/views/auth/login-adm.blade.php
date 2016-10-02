@@ -24,7 +24,7 @@
 
                <span class="input-group-addon"><i class="icon_profile"></i></span>
 
-              <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" autofocus>
+              <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-poçt" autofocus>
 
               @if ($errors->has('email'))
               <span class="help-block">
@@ -36,7 +36,7 @@
               </div>
               <div class="input-group">
                 <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                <input id="password" type="password" class="form-control" name="password" placeholder="Şifrə">
                 @if ($errors->has('password'))
                 <span class="help-block">
                   <strong>{{ $errors->first('password') }}</strong>

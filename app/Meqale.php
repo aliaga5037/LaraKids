@@ -13,4 +13,6 @@ class Meqale extends Model
     public function meqaleToAdmin(){
         return $this->belongsTo('App\Admin');
     }
+
+    protected $fillable = ['title', 'text'];
 }

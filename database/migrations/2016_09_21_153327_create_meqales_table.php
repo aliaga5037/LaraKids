@@ -14,7 +14,7 @@ class CreateMeqalesTable extends Migration
     {
         Schema::create('meqales', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
+            $table->text('title');
             $table->text('text');
             $table->integer('hekim_id');
             $table->integer('admin_id');

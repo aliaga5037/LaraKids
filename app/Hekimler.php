@@ -27,4 +27,8 @@ class Hekimler extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function meqale(){
+        return $this->hasMany('App\Meqale');
+    }
 }
