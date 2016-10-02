@@ -40,27 +40,27 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-
+Route::get('/stat/{id}', 'StatController@find');
 // Route::resource('/admin', 'AdminController');
 
-Route::get('/admin',function()
-{
-	return view('adminPanel.index');
+
+
+// Route::get('hekimler/create',function(){
+// 	return view('hekimler.create');
+// });
+
+Route::get('hekimler/index','HekimController@login', function(){
+	return view('hekimler.index');
 });
 
-Route::get('/admin/tenzim',function()
-{
-	return view('adminPanel.tenzim');
-});
+Route::get('/hekimler/show/{id}','MeqaleController@show');
+Route::get('/hekimler/edit/{id}','MeqaleController@edit');
+Route::get('/hekimler/destroy/{id}','MeqaleController@destroy');
+Route::post('/hekimler/store', 'MeqaleController@store');
 
-Route::resource('/admin/tenzim', 'HPController');
+Route::get('/hekimler/find/{id}', 'MeqaleController@find');
 
-
-// Route::resource('/admin', 'AdminController');
-
-Route::get('/create', function(){
-	return view('AdminC.create');
-});
+Route::post('/hekimler/update/{id}', 'MeqaleController@update');
 
 Route::group(['middleware'=> 'admin'],function(){
 	Route::group(['middleware'=> 'auth:admin'], function(){

@@ -16,7 +16,7 @@ class CreateSuallarsTable extends Migration
             $table->increments('id');
             $table->string('text');
             $table->integer('user_id');
-            $table->integer('hekim_id');
+            $table->integer('hekimler_id');
             $table->timestamps();
         });
     }

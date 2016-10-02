@@ -16,65 +16,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-3  col-sm-12 col-xs-4 col-xs-offset-4" >
-                    <button class="button1" onclick="myFunction()">All(8)</button>
-                    <button class="button2" onclick="myFunction1()">Arts(1)</button>
-                    <button class="button3" onclick="myFunction2()">Fun(4)</button>
+                    <button class="button1">All(8)</button>
+                    <button class="button2">Arts(1)</button>
+                    <button class="button3">Fun(4)</button>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-    function myFunction() {
-    document.querySelector(".button1").style.backgroundColor = "#CF571B";
-    document.querySelector(".button2").style.backgroundColor = "#DF9B00";
-    document.querySelector(".button3").style.backgroundColor = "#DF9B00";
-    }
-    function myFunction1(){
-    document.querySelector(".button2").style.backgroundColor = "#CF571B";
-    document.querySelector(".button1").style.backgroundColor = "#DF9B00";
-    document.querySelector(".button3").style.backgroundColor = "#DF9B00";
-    }
-    function myFunction2(){
-    document.querySelector(".button3").style.backgroundColor = "#CF571B";
-    document.querySelector(".button2").style.backgroundColor = "#DF9B00";
-    document.querySelector(".button1").style.backgroundColor = "#DF9B00";
-    }
-    </script>
-    
+
     <section id="portfolioHexa" class="col-md-12 col-sm-12 col-xs-12 ">
         <div class="container  margin">
-            <div class="hexagon one marginLeft">
+            <div class="hexagon one marginLeft all">
                 <img src="assets/images/cartoon1.jpg" class="img img-responsive ">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon two marginLeft">
+            <div class="hexagon two marginLeft all fun">
                 <img src="assets/images/cartoon2.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon three marginLeft">
+            <div class="hexagon three marginLeft all arts">
                 <img src="assets/images/cartoon3.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon four marginLeft">
+            <div class="hexagon four marginLeft all">
                 <img src="assets/images/cartoon4.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
         </div>
         <!-- -======================================================= -->
         <div class="container  margin">
-            <div class="hexagon five marginLeft">
+            <div class="hexagon five marginLeft all">
                 <img src="assets/images/cartoon5.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon six marginLeft">
+            <div class="hexagon six marginLeft all fun">
                 <img src="assets/images/cartoon6.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon seven marginLeft">
+            <div class="hexagon seven marginLeft all">
                 <img src="assets/images/cartoon7.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon eight marginLeft">
+            <div class="hexagon eight marginLeft all fun">
                 <img src="assets/images/cartoon8.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
@@ -82,19 +65,19 @@
     </section>
     <section id="Fun" class="col-md-12">
         <div class="container  margin">
-            <div class="hexagon one marginLeft">
+            <div class="hexagon one marginLeft all fun">
                 <img src="assets/images/cartoon7.jpg" class="img img-responsive ">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon two marginLeft">
+            <div class="hexagon two marginLeft all">
                 <img src="assets/images/cartoon5.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon three marginLeft">
+            <div class="hexagon three marginLeft all">
                 <img src="assets/images/cartoon3.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
-            <div class="hexagon eight marginLeft">
+            <div class="hexagon eight marginLeft all">
                 <img src="assets/images/cartoon7.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
             </div>
@@ -107,28 +90,36 @@
                 <i class="fa fa-link"></i>
             </div>
         </section>
+
         <script>
-        $(document).ready(function(){
-        $("#portfolioHexa").show();
-        $("#Arts1").hide();
-        $("#Fun").hide();
-        $(".button1").click(function(){
-        $("#portfolioHexa").show();
-        $("#Arts1").hide();
-        $("#Fun").hide();
-        })
-        $(".button2").click(function(){
-        $("#portfolioHexa").hide();
-        $("#Fun").hide();
-        $("#Arts1").show();
-        })
-        $(".button3").click(function(){
-        $("#portfolioHexa").hide();
-        $("#Arts1").hide();
-        $("#Fun").show();
-        })
-        });
+            $(document).ready(function() {
+                $('button')
+                .on('click',function(event) {
+                    $('button').css('background', '#DF9B00');
+                    $(this).css('background', '#CF571B');
+                });
+
+                $('.button1')
+                .on('click',function(event) {
+                    $('.hexagon').hide();
+                    $('.all').show();
+                });
+
+                $('.button2')
+                .on('click',function(event) {
+                    $('.hexagon').hide();
+                    $('.arts').show();
+                });
+
+                $('.button3')
+                .on('click',function(event) {
+                    $('.hexagon').hide();
+                    $('.fun').show();
+                });
+            });
         </script>
+
+
         <script type="text/javascript">
         $("#portfolioHexa .hexagon")
         .on('mouseover',function(event) {

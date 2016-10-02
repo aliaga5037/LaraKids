@@ -1,10 +1,6 @@
 <!doctype html>
 <html>
     <head>
-        <?php
-        use App\Texts;
-        $text=Texts::all();
-        ?>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,27 +23,23 @@
         <script src="{{ url('assets/js/slider.js')}}"></script>
     </head>
     <body>
-        <section id='header'><!-- aysel -->
+        <section id='header' ><!-- aysel -->
         <!-- <div class = 'container-fluid'> -->
         <div class = 'container'>
             <div class = 'row'>
                 <div class = 'col-md-6'>
                     <div class = 'row1_left'>
-                        <img src="images/logo.png">
+                        <img src="{{url('images/logo.png')}}">
                     </div>
                 </div>
                 <div class = 'col-md-6'>
                     <div class = 'row1_right'>
                         <p>
-                            <?php
-                            echo $text->find($id=1)->value;
-                            ?>
+                            xxx@gmail.com
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </p>
                         <p>
-                            <?php
-                            echo $text->find($id=2)->value;
-                            ?>
+                            123456789
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </p>
                     </div>
@@ -56,7 +48,7 @@
         </div>
         <!-- </div> -->
         <div class = 'mn'>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default ">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -74,8 +66,10 @@
                             <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
                             <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
                             <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
-                            <li><a class ='pink' href="{{url('/stats')}}">Məqalələr</a></li>
-                           
+                            <li><a class ='yellow' href="{{url('/stats')}}">Məqalələr</a></li>
+                            <li><a class ='green' href="{{url('/login')}}">Daxil ol</a></li>
+                            <li><a class ='blue' href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
+                            <li><a class ='pink' href="{{url('/logout')}}">Çıxış et</a></li>                           
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class ='blue' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
@@ -90,13 +84,13 @@
     </section>
     @yield('content')
     
-    <img src="assets/images/top.png" title="Go To Top" class="top">
+    <img src="{{url('assets/images/top.png')}}" title="Go To Top" class="top">
     <section id="about">
         <div class = 'container-fluid'>
             <div class = 'row'>
                 <div class = 'col-md-12'>
                     <div class = 'image_wrapper'>
-                        <img src="images/footer_top_bg.png"/>
+                        <img src="{{url('images/footer_top_bg.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -105,28 +99,30 @@
             <div class = 'row '>
                 <div class = 'col-md-2 col-md-offset-2'>
                     <div class = 'col_wrapper'>
-                        <h5>Autist uşaqlar haqqında</h5>
-                        <img src="images/green_sketch.png">
-                        <h5>Lorem ipsh5um dolor sit amet.Lorem ipsum dolor sit amet</h5>
+
+                        <h2>Autist usaqlar haqqinda</h2>
+                        <img src="{{url('images/green_sketch.png')}}">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+
                     </div>
                 </div>
                 <div class = 'col-md-2 '>
                     <div class = 'col_wrapper'>
-                        <h5>Son əlavə olunan şərhlər</h5>
-                        <img src="images/yellow_sketch.png">
-                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
+
+                        <h2>Son elave olunan serhler</h2>
+                        <img src="{{url('images/yellow_sketch.png')}}">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+
                     </div>
                 </div>
                 <div class = 'col-md-2'>
                     <div class = 'col_wrapper'>
-                        <h5>Kontakt</h5>
-                        <img src="images/red_sketch.png">
-                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
-                    </div>
-                </div>
-                <div class= 'col-md-3 ' >
-                    <div class= 'col_wrapper'>
-                        <h5>We're social</h5>
+
+                        <h2>Kontakt</h2>
+                        <img src="{{url('images/red_sketch.png')}}">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h3>We are social</h3>
+
                         <div class = 'social'>
                             <input type="text" name="">
                             <button>Subscribe</button>
@@ -157,7 +153,6 @@
                 </div>
             </div>
             </section><!-- aysel -->
-            
         </body>
     </html>
 </html>

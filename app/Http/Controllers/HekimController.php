@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
 use App\Hekimler;
+use App\Meqale;
 class HekimController extends Controller
 {
     private $control;
@@ -31,18 +32,20 @@ class HekimController extends Controller
 
    	public function index()
    	{
-   		return view('hekimler.index');
-
-
+      $id = auth()->guard('hekimler')->user()->id;
+      
+      $meqaleler=Meqale::where('hekimler_id',$id)->get();
+      return view('hekimler.index',compact('meqaleler'));
    	}
 
 
    public function login()
    {
     if($this->control == true){
-            return redirect($this->redirect);
+        return redirect('hekimler');
         };
-   	 return view('auth.login-hekim');
+        return view('auth.login-hekim');
+     
 
    }
    public function postLogin(Request $request)
@@ -75,6 +78,6 @@ class HekimController extends Controller
         public function postLogout()
         {
             auth()->guard('hekimler')->logout();
-            return redirect('/hekimler/login');
+            return redirect('/hekimler/logout');
           }
     }
