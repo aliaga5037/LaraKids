@@ -39,7 +39,7 @@ Route::get('/contact',function()
 });
 
 
-Route::get('/stats',function(){
+Route::get('/meqale',function(){
 	$parts=Meqale::all();
 	return view('kids.meqaleler',compact('parts'));
 });

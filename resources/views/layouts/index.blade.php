@@ -66,7 +66,7 @@
                             <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
                             <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
                             <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
-                            <li><a class ='yellow' href="{{url('/stats')}}">Məqalələr</a></li>
+                            <li><a class ='yellow' href="{{url('/meqale')}}">Məqalələr</a></li>
                             <li><a class ='green' href="{{url('/login')}}">Daxil ol</a></li>
                             <li><a class ='blue' href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
                             <li><a class ='pink' href="{{url('/logout')}}">Çıxış et</a></li>                           
