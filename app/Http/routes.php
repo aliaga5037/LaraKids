@@ -38,6 +38,12 @@ Route::get('/contact',function()
 	return view('kids.contactUs');
 });
 
+
+Route::get('/stats',function(){
+	$parts=Meqale::all();
+	return view('kids.meqaleler',compact('parts'));
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
@@ -82,7 +88,3 @@ Route::group(['middleware'=> 'hekimler'],function(){
 });	
 
 
-Route::get('/stats',function(){
-	$parts=Meqale::all();
-	return view('kids.meqaleler',compact('parts'));
-});
