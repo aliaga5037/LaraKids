@@ -1,9 +1,6 @@
 @extends('layouts.index')
 @section('content')
-<?php
-use App\Meqale;
-$parts=Meqale::all();
-?>
+
 <section id="blog" class="col-md-12 col-sm-12 col-xs-12">
 	<div class="container text-center">
 		@foreach($parts as $part)
