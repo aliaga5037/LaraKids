@@ -97,39 +97,35 @@
         </div>
         <div class = 'container-fluid'>
             <div class = 'row '>
-                <div class = 'col-md-2 col-md-offset-2'>
+                <div class = 'col-md-4 col-md-offset-1'>
                     <div class = 'col_wrapper'>
 
-                        <h2>Autist usaqlar haqqinda</h2>
+                        <h4>Autist usaqlar haqqinda</h4>
                         <img src="{{url('images/green_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
 
                     </div>
                 </div>
-                <div class = 'col-md-2 '>
+                <div class = 'col-md-3' ">
                     <div class = 'col_wrapper'>
 
-                        <h2>Son elave olunan serhler</h2>
+                        <h4>Son elave olunan serhler</h4>
                         <img src="{{url('images/yellow_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
 
                     </div>
                 </div>
-                <div class = 'col-md-2'>
+                <div class = 'col-md-4' >
                     <div class = 'col_wrapper'>
 
-                        <h2>Kontakt</h2>
+                        <h4>Kontakt</h4>
                         <img src="{{url('images/red_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                        <h3>We are social</h3>
-
-                        <div class = 'social'>
-                            <input type="text" name="">
-                            <button>Subscribe</button>
+                        <h5>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</h5>
+                     
                         </div>
+                    
                     </div>
-                </div>
-            </div>
+            
         </div>
         </section><!-- aysel -->
         <section id="footer">
