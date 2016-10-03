@@ -10,6 +10,8 @@
 |
 */
 use App\Slider;
+use App\Meqale;
+
 
 Route::get('/', function()
 {
@@ -81,5 +83,6 @@ Route::group(['middleware'=> 'hekimler'],function(){
 
 
 Route::get('/stats',function(){
-	return view('kids.meqaleler');
+	$parts=Meqale::all();
+	return view('kids.meqaleler',compact('parts'));
 });
