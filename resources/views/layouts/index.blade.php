@@ -23,130 +23,87 @@
         <script src="{{ url('assets/js/slider.js')}}"></script>
     </head>
     <body>
-        <section id='header' ><!-- aysel -->
-        <!-- <div class = 'container-fluid'> -->
-        <div class = 'container'>
-            <div class = 'row'>
-                <div class = 'col-md-6'>
-                    <div class = 'row1_left'>
-                        <img src="{{url('images/logo.png')}}">
-                    </div>
-                </div>
-                <div class = 'col-md-6'>
-                    <div class = 'row1_right'>
-                        <p>
-                            xxx@gmail.com
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </p>
-                        <p>
-                            123456789
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </p>
-                    </div>
-                </div>
+        <section id='header' >
+            <div class="container">
+                <img src="{{url('images/logo.png')}}" alt="">
+                
+                <ul class="pull-right ep">
+                    <li class="email">
+                        <span>contact@kidslife.com</span> <i class="fa fa-envelope"></i>
+                    </li>
+                    <li>
+                        <i>+1 959 552 5963</i> <i class="fa fa-phone"></i>
+                    </li>
+                </ul>
+
+                <ul class="menu">
+                    <li class="red"><a href="{{url('/')}}">Ana Səhifə</a></li>
+                    <li class="orange"><a href="{{url('/about')}}">Haqqımızda</a></li>
+                    <li class="green"><a href="{{url('/portfolio')}}">Oyunlar</a></li>
+                    <li class="yellow"><a href="{{url('/services')}}">Servislər</a></li>
+                    <li class="skyblue"><a href="{{url('/contact')}}">Əlaqə</a></li>
+                    <li class="darkblue"><a href="{{url('/stats')}}">Məqalələr</a></li>
+                    <li class="purple"><a href="{{url('/login')}}">Daxil ol</a></li>
+                    <li class="purplesecond"><a href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
+                    <li class="purplethird"><a href="{{url('/logout')}}">Çıxış et</a></li>
+                </ul>
             </div>
-        </div>
-        <!-- </div> -->
-        <div class = 'mn'>
-            <nav class="navbar navbar-default ">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand dsp" href="#">Menu</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-left">
-                            
-                            <li><a class = 'active red' href="{{url('/')}}">Home</a></li>
-                            <li><a class ='yellow' href="{{url('/about')}}">About Us</a></li>
-                            <li><a class ='green' href="{{url('/portfolio')}}">Portfolio</a></li>
-                            <li><a class ='blue' href="{{url('/services')}}">Services</a></li>
-                            <li><a class ='pink' href="{{url('/contact')}}">Contact us</a></li>
-                            <li><a class ='yellow' href="{{url('/stats')}}">Məqalələr</a></li>
-                            <li><a class ='green' href="{{url('/login')}}">Daxil ol</a></li>
-                            <li><a class ='blue' href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
-                            <li><a class ='pink' href="{{url('/logout')}}">Çıxış et</a></li>                           
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class ='blue' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a class ='red' href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a class ='yellow' href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                            <li><a class ='green' href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+            
+        </section>
     @yield('content')
     
     <img src="{{url('assets/images/top.png')}}" title="Go To Top" class="top">
-    <section id="about">
-        <div class = 'container-fluid'>
-            <div class = 'row'>
-                <div class = 'col-md-12'>
-                    <div class = 'image_wrapper'>
-                        <img src="{{url('images/footer_top_bg.png')}}"/>
+        <section id="about">
+            <div class="container">
+                <div class="col-md-3 kidsLife">
+                   <div class="row">
+                        <h4>About Kids Life</h4>
+                        <img src="{{url('images/red_sketch.png')}}" alt="">
+                        <p>Happy Kids Life comes with powerful theme options, which empowers you to quickly and easily build incredible store.</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-check">English Grammer Class</i>
+                            </li>
+                            <li>
+                                <i class="fa fa-check">Music Class</i>
+                            </li>
+                            <li>
+                                <i class="fa fa-check">Swimming & Karate</i>
+                            </li>
+                            <li>
+                                <i class="fa fa-check">Lot of HTML Styles</i>
+                            </li>
+                            <li>
+                                <i class="fa fa-check">Unique News Page Design</i>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4>Latest Post</h4>
+                        <img src="{{url('images/green_sketch.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4>Twitter Feeds</h4>
+                        <img src="{{url('images/yellow_sketch.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <h4>Contact</h4>
+                        <img src="{{url('images/steelblue_sketch.png')}}" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class = 'container'>
-            <div class = 'row brd'>
-                <div class = 'col-md-4'>
-                    <div class = 'col_wrapper'>
-                        <h2>Autist usaqlar haqqinda</h2>
-                        <img src="{{url('images/green_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-                <div class = 'col-md-4'>
-                    <div class = 'col_wrapper'>
-                        <h2>Son elave olunan serhler</h2>
-                        <img src="{{url('images/yellow_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-                <div class = 'col-md-4'>
-                    <div class = 'col_wrapper'>
-                        <h2>Kontakt</h2>
-                        <img src="{{url('images/red_sketch.png')}}">
-                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
-                        <h3>We are social</h3>
-                        <div class = 'social'>
-                            <input type="text" name="">
-                            <button>Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section><!-- aysel -->
+        </section>
         <section id="footer">
-            <div class = 'container'>
-                <div class = 'row marginTop wdt'>
-                    <div class = 'col-md-6'>
-                        <p>© 2014 Kids Life. All rights reserved. </p>
-                    </div>
-                    <div class = 'col-md-6'>
-                        <!-- <p>Follow Us</p> -->
-                        <div class = 'follow'>
-                            <ul>
-                                <li><p>Follow Us</p></li>
-                                <li><a class = 'one' href="https://www.facebook.com"><i class="fa  fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a class = 'two' href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a class = 'three' href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                                <li><a class = 'four' href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+                <b>@ 2016 AUTISM.AZ</b>
             </div>
-            </section><!-- aysel -->
+        </section>
         </body>
     </html>
 </html>

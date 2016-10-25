@@ -2,7 +2,7 @@
 @section('content')
 <section id="blog" class="col-md-12 col-sm-12 col-sm-12 col-xs-12">
 	<div class="container text-center">
-		<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="row">
 				<div class="data col-md-3 col-sm-3 col-xs-3 text-center">
 					<a href="{{url('hekimler/find',$id)}}"><img src="{{url('assets/images/service1.jpg')}}" alt=""></a>

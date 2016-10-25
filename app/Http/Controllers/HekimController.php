@@ -35,7 +35,7 @@ class HekimController extends Controller
       $id = auth()->guard('hekimler')->user()->id;
       
       $meqaleler=Meqale::where('hekimler_id',$id)->get();
-      return view('hekimler.index',compact('meqaleler'));
+      return view('hekimler.index',compact('meqaleler','id'));
    	}
 
 
@@ -79,5 +79,17 @@ class HekimController extends Controller
         {
             auth()->guard('hekimler')->logout();
             return redirect('/hekimler/logout');
+          }
+
+        public function settings($id)
+        {
+            $id=Hekimler::find($id);
+            return view('hekimler.settings',compact('id'));
+          }
+
+        public function save(Request $request,$id)
+        {
+            Hekimler::find($id)->update($request->all());
+            return back()->with('success','Yeniləndi');
           }
     }

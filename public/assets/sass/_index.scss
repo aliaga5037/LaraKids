@@ -26,12 +26,11 @@ $blue:#008C99;
  	right: 15px;
  }
 // --------------------------HEADER=============================
-#header{
-	height:100px;
-}
+
 // --------------------------SLIDER=============================
 #slider{
 	height:600px;
+	margin-top:-50px;
 	overflow:hidden;
 	img{
 		float: left;
@@ -523,7 +522,7 @@ $blue:#008C99;
 		margin:0 auto;
 	}
 
-	.col-md-6{
+	.col-md-6,.col-md-12{
 		margin-top: 30px;
 		.col-md-3{
 			img{

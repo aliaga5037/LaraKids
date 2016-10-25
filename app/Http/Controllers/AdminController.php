@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 
 use App\Admin;
+use App\User;
+use App\Meqale;
+use App\Hekimler;
 use App\Http\Controllers\Controller;
 use Auth;
 class AdminController extends Controller
@@ -43,7 +46,7 @@ class AdminController extends Controller
          if($this->control == true){
             return redirect($this->redirect);
         };
-        return view ('auth.login-adm');
+        return view('admin.index');
     }
 
       public function postLogin(Request $request)
@@ -81,8 +84,83 @@ class AdminController extends Controller
     public function logout()
     {
         auth()->guard('admin')->logout();
-        return redirect('/admin/login');
+        return redirect('/');
     }
+
+    public function users()
+    {
+        $users=User::all();
+        return view('admin.users',compact('users'));
+    }
+
+    public function show($id)
+    {
+        $user=User::find($id);
+        return view('admin.show',compact('user'));
+    }
+
+    public function ban($id)
+    {
+        $user=User::find($id);
+        $user->delete();
+        return back();
+    }
+
+    public function meqale()
+    {
+        $meqaleler=Meqale::all();
+        return view('admin.article',compact('meqaleler'));
+    }
+
+    public function showMeqale($id)
+    {
+        $meqale=Meqale::find($id);
+        return view('admin.showarticle',compact('meqale'));
+    }
+
+    public function destroyMeqale($id)
+    {
+        $meqale=Meqale::find($id);
+        $meqale->delete();
+        return back();
+    }
+
+    public function hekimler()
+    {
+        $hekimler=Hekimler::all();
+        return view('admin.hekimler',compact('hekimler'));
+    }
+
+    public function showHekimler($id)
+    {
+        $hekim=Hekimler::find($id);
+        return view('admin.showhekim',compact('hekim'));
+    }
+    public function destroyHekim($id)
+    {
+        $hekim=Hekimler::find($id);
+        $hekim->delete();
+        return back();
+    }
+
+    public function addHekim()
+    {
+        return view('admin.addhekim');
+    }
+
+    public function saveHekim(Request $request)
+    {
+        $hekim=new Hekimler;
+        $hekim->name=$request->name;
+        $hekim->surname=$request->surname;
+        $hekim->about=$request->about;
+        $hekim->email=$request->email;
+        $hekim->password=$request->password;
+        $hekim->save();
+        $hekimler=Hekimler::all();
+        return view('admin.hekimler',compact('hekimler'));
+    }
+
 }
   
  

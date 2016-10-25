@@ -57,6 +57,9 @@ Route::get('/hekimler/show/{id}','MeqaleController@show');
 Route::get('/hekimler/edit/{id}','MeqaleController@edit');
 Route::get('/hekimler/destroy/{id}','MeqaleController@destroy');
 Route::post('/hekimler/store', 'MeqaleController@store');
+Route::get('/hekimler/settings/{id}', 'HekimController@settings');
+Route::get('/savehekim/{id}', 'HekimController@save');
+// Route::get('/hekimler/logout', 'HekimController@postlogout');
 
 Route::get('/hekimler/find/{id}', 'MeqaleController@find');
 
@@ -70,6 +73,17 @@ Route::group(['middleware'=> 'admin'],function(){
 Route::get('/admin/login', 'AdminController@login');
 Route::post('/admin/login', 'AdminController@postlogin');
 Route::get('/admin/logout','AdminController@logout');
+Route::get('/admin/users','AdminController@users');
+Route::get('/admin/show/{id}','AdminController@show');
+Route::get('/admin/ban/{id}','AdminController@ban');
+Route::get('/admin/articles','AdminController@meqale');
+Route::get('/admin/show/{id}','AdminController@showMeqale');
+Route::get('/admin/destroy/{id}','AdminController@destroyMeqale');
+Route::get('/admin/hekimler','AdminController@hekimler');
+Route::get('/admin/showh/{id}','AdminController@showHekimler');
+Route::get('/admin/destroyh/{id}','AdminController@destroyHekim');
+Route::get('/admin/add','AdminController@addHekim');
+Route::get('/admin/addhekim','AdminController@saveHekim');
 });
 
 Route::group(['middleware'=> 'hekimler'],function(){
