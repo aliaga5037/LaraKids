@@ -13,6 +13,8 @@ use App\Slider;
 use App\Meqale;
 
 
+Route::get('/getPDF' , 'PdfController@getPdf');
+
 Route::get('/', function()
 {
 	return view('kids.index');
