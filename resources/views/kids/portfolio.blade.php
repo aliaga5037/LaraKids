@@ -25,62 +25,29 @@
     </section>
 
     <section id="portfolioHexa" class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="container  margin">
-            <div class="hexagon one marginLeft all">
-                <img src="assets/images/cartoon1.jpg" class="img img-responsive ">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon two marginLeft all fun">
-                <img src="assets/images/cartoon2.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon three marginLeft all arts">
-                <img src="assets/images/cartoon3.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon four marginLeft all">
-                <img src="assets/images/cartoon4.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-        </div>
-        <!-- -======================================================= -->
-        <div class="container  margin">
-            <div class="hexagon five marginLeft all">
-                <img src="assets/images/cartoon5.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon six marginLeft all fun">
-                <img src="assets/images/cartoon6.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon seven marginLeft all">
-                <img src="assets/images/cartoon7.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon eight marginLeft all fun">
-                <img src="assets/images/cartoon8.jpg" class="img img-responsive">
-                <i class="fa fa-link"></i>
-            </div>
-        </div>
+        <div class="hexagon one">
+            <img src="assets/images/img2.jpg" class="img img-responsive">
+            <i class="fa fa-link"></i>
+         </div>
     </section>
     <section id="Fun" class="col-md-12">
         <div class="container  margin">
-            <div class="hexagon one marginLeft all fun">
-                <img src="assets/images/cartoon7.jpg" class="img img-responsive ">
+            <div class="hexagon one">
+                <img src="assets/images/img2.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon two marginLeft all">
-                <img src="assets/images/cartoon5.jpg" class="img img-responsive">
+             </div>
+            <div class="hexagon one">
+                <img src="assets/images/img2.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon three marginLeft all">
-                <img src="assets/images/cartoon3.jpg" class="img img-responsive">
+             </div>
+            <div class="hexagon one">
+                <img src="assets/images/img2.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
-            </div>
-            <div class="hexagon eight marginLeft all">
-                <img src="assets/images/cartoon7.jpg" class="img img-responsive">
+             </div>
+             <div class="hexagon one">
+                <img src="assets/images/img2.jpg" class="img img-responsive">
                 <i class="fa fa-link"></i>
-            </div>
+             </div>
         </div>
     </section>
     <section id="Arts1" class="col-md-12">

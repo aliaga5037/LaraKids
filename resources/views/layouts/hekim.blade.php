@@ -30,9 +30,12 @@ use App\Hekimler;
 	<body>
 		<div class="panel">
 			<div class="container">
+			@php
+				
+			@endphp
 				<img src="{{url('images/logo.png')}}" class="logo pull-left">
 				<a href="{{url('/hekimler/logout')}}" class="pull-right" style="color:black;padding:15px">Çıxış et</a>
-				<a href="{{url('/hekimler/settings',$id)}}" class="pull-right" style="color:black;padding:15px">Tənzimləmə</a>
+				{{-- <a href="{{url('/hekimler/settings/',$id)}}" class="pull-right" style="color:black;padding:15px">Tənzimləmə</a> --}}
 			</div>
 		</div>
 		@yield('content')

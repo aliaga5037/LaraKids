@@ -18,7 +18,7 @@
 					<td>{{$user->name}}</td>
 					<td>{{$user->email}}</td>
 					<td>
-						<a href="{{url('admin/show',$user->id)}}" class="btn btn-xs btn-default">
+						<a href="{{url('admin/showuser',$user->id)}}" class="btn btn-xs btn-default">
 							<i class="fa fa-eye"></i>
 						</a>
 						<a href="" class="btn btn-xs btn-primary">

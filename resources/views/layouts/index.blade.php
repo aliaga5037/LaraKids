@@ -42,10 +42,13 @@
                     <li class="green"><a href="{{url('/portfolio')}}">Oyunlar</a></li>
                     <li class="yellow"><a href="{{url('/services')}}">Servislər</a></li>
                     <li class="skyblue"><a href="{{url('/contact')}}">Əlaqə</a></li>
-                    <li class="darkblue"><a href="{{url('/stats')}}">Məqalələr</a></li>
+                    <li class="darkblue"><a href="{{url('/meqale')}}">Məqalələr</a></li>
                     <li class="purple"><a href="{{url('/login')}}">Daxil ol</a></li>
                     <li class="purplesecond"><a href="{{url('/register')}}">Qeydiyyatdan keç</a></li>
                     <li class="purplethird"><a href="{{url('/logout')}}">Çıxış et</a></li>
+                    @if(auth()->guard('admin')->user())
+                        {{'<li>okd</li>'}}
+                    @endif
                 </ul>
             </div>
             

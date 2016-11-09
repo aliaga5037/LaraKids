@@ -70,11 +70,11 @@ Route::group(['middleware'=> 'admin'],function(){
 		Route::get('/admin', 'AdminController@index');
 	});
 
-Route::get('/admin/login', 'AdminController@login');
+Route::get('/admin/login', 'AdminController@index');
 Route::post('/admin/login', 'AdminController@postlogin');
 Route::get('/admin/logout','AdminController@logout');
 Route::get('/admin/users','AdminController@users');
-Route::get('/admin/show/{id}','AdminController@show');
+Route::get('/admin/showuser/{id}','AdminController@show');
 Route::get('/admin/ban/{id}','AdminController@ban');
 Route::get('/admin/articles','AdminController@meqale');
 Route::get('/admin/show/{id}','AdminController@showMeqale');
@@ -94,6 +94,6 @@ Route::group(['middleware'=> 'hekimler'],function(){
 });	
 
 
-Route::get('/stats',function(){
+Route::get('/meqale',function(){
 	return view('kids.meqaleler');
 });
