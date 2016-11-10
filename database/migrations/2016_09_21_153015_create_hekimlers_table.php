@@ -19,6 +19,7 @@ class CreateHekimlersTable extends Migration
             $table->string('haqqinda',255);
             $table->string('email',255);
             $table->string('password');
+            $table->string('avatar')->default('images/avatars/default/doctor.png');
             $table->rememberToken();
             $table->timestamps();
         });

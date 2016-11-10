@@ -4,8 +4,8 @@
 	<div class="row">
 		<h1><b>Məqalələriniz</b></h1>
 		<a class="btn btn-warning createButton">Məqalə Yaz</a>
-		
-		
+		<br>			
+		<p><span style="color:green">{{count($meqaleler)}}</span> məqaləniz var.</p>
 		<table class="table table-striped">
 			<thead>
 				<tr>

@@ -16,6 +16,7 @@ class CreateMeqalesTable extends Migration
             $table->increments('id');
             $table->text('title');
             $table->text('text');
+            $table->text('picture')->default('assets/images/blog_img1.jpg');
             $table->integer('hekim_id');
             $table->integer('admin_id');
             $table->timestamps();

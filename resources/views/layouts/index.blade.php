@@ -25,7 +25,7 @@
     <body>
         <section id='header' >
             <div class="container">
-                <img src="{{url('images/logo.png')}}" alt="">
+                <img src="{{url('images/logo.png')}}" style="height:100px; margin:10px">
                 
                 <ul class="pull-right ep">
                     <li class="email">
@@ -40,8 +40,6 @@
                     <li class="red"><a href="{{url('/')}}">Ana Səhifə</a></li>
                     <li class="orange"><a href="{{url('/about')}}">Haqqımızda</a></li>
                     <li class="green"><a href="{{url('/portfolio')}}">Oyunlar</a></li>
-                    <li class="yellow"><a href="{{url('/services')}}">Servislər</a></li>
-                    <li class="skyblue"><a href="{{url('/contact')}}">Əlaqə</a></li>
                     <li class="darkblue"><a href="{{url('/meqale')}}">Məqalələr</a></li>
                     <li class="purple"><a href="{{url('/login')}}">Daxil ol</a></li>
                     <li class="purplesecond"><a href="{{url('/register')}}">Qeydiyyatdan keç</a></li>

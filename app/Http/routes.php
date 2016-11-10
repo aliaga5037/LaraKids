@@ -25,17 +25,6 @@ Route::get('/portfolio',function()
 {
 	return view('kids.portfolio');
 });
-
-Route::get('/services',function()
-{
-	return view('kids.services');
-});
-
-Route::get('/contact',function()
-{
-	return view('kids.contactUs');
-});
-
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
