@@ -25,7 +25,6 @@ Route::get('/portfolio',function()
 {
 	return view('kids.portfolio');
 });
-Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
@@ -54,26 +53,24 @@ Route::get('/hekimler/find/{id}', 'MeqaleController@find');
 
 Route::post('/hekimler/update/{id}', 'MeqaleController@update');
 
-Route::group(['middleware'=> 'admin'],function(){
-	Route::group(['middleware'=> 'auth:admin'], function(){
-		Route::get('/admin', 'AdminController@index');
-	});
 
-Route::get('/admin/login', 'AdminController@index');
-Route::post('/admin/login', 'AdminController@postlogin');
-Route::get('/admin/logout','AdminController@logout');
-Route::get('/admin/users','AdminController@users');
-Route::get('/admin/showuser/{id}','AdminController@show');
-Route::get('/admin/ban/{id}','AdminController@ban');
-Route::get('/admin/articles','AdminController@meqale');
-Route::get('/admin/show/{id}','AdminController@showMeqale');
-Route::get('/admin/destroy/{id}','AdminController@destroyMeqale');
-Route::get('/admin/hekimler','AdminController@hekimler');
-Route::get('/admin/showh/{id}','AdminController@showHekimler');
-Route::get('/admin/destroyh/{id}','AdminController@destroyHekim');
-Route::get('/admin/add','AdminController@addHekim');
-Route::get('/admin/addhekim','AdminController@saveHekim');
-});
+	Route::get('/admin/login', 'AdminController@login');
+	Route::post('/admin/check', 'AdminController@checkLogin');
+
+if (isset($_SESSION['adminTrue'])) {
+	Route::get('/admin/logout','AdminController@logout');
+	Route::get('/admin/users','AdminController@users');
+	Route::get('/admin/showuser/{id}','AdminController@show');
+	Route::get('/admin/ban/{id}','AdminController@ban');
+	Route::get('/admin/articles','AdminController@meqale');
+	Route::get('/admin/show/{id}','AdminController@showMeqale');
+	Route::get('/admin/destroy/{id}','AdminController@destroyMeqale');
+	Route::get('/admin/hekimler','AdminController@hekimler');
+	Route::get('/admin/showh/{id}','AdminController@showHekimler');
+	Route::get('/admin/destroyh/{id}','AdminController@destroyHekim');
+	Route::get('/admin/add','AdminController@addHekim');
+	Route::get('/admin/addhekim','AdminController@saveHekim');
+}
 
 Route::group(['middleware'=> 'hekimler'],function(){
 		Route::get('/hekimler', 'HekimController@index');
